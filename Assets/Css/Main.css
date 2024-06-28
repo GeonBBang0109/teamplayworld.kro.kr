@@ -1,0 +1,351 @@
+/*
+    ================= [ Start ] =================
+        + Main Style Sheet Started.
+    ============================================= 
+*/
+
+/* 1. Intro Section */
+body { background: linear-gradient(to top right, #4e6cff, #5a7eb9); }
+
+.intro {
+    width: 100%;
+    height: 100vh;
+}
+
+.intro-title {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 53%;
+    text-align: center;
+    font-size: 250px;
+    font-weight: bolder;
+    transition: all 1s;
+    animation: FadeIn 1s;
+    cursor: default;
+    font-family: 'SBAggroB';
+}
+
+.intro:hover > .intro-title {
+    top: 44.5%;
+    font-size: 220px;
+    color: #000;
+}
+
+.intro-line {
+    position: relative;
+    top: 35%;
+    left: 2%;
+    width: 50%;
+    border: 2px solid #fff;
+    transition: 0.5s;
+    animation: FadeIn 1s;
+}
+
+.intro:hover > .intro-line {
+    width: 50%;
+    top: 55.5%;
+    left: 5%;
+}
+
+.title {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 40%;
+    color: #fff;
+    font-size: 0;
+    font-family: 'SBAggroB';
+    text-align: center;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.intro:hover > .title {
+    font-size: 150px;
+    transition: 0.5s;
+}
+/* // 1. Intro Section */
+
+/* 2. Member Section */
+.member {
+    background: #ffffff;
+    height: 100vh;
+}
+
+.right {
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    float: right;
+    transition: 0.5s;
+}
+
+.member:hover > .right {
+    position: relative;
+    width: 35%;
+    border-radius: 30px 0 0 30px;
+    float: right;
+}
+
+.right-text {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.member-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+    color: #748BFF;
+    font-size: 23px;
+    opacity: 0;
+    font-family: 'NanumSquareNeo-Variable';
+    transition: all 0.5s;
+}
+
+.member:hover > .right > .member-link {
+    opacity: 1;
+}
+
+.member-link:hover {
+    color: #6673b8;
+}
+
+.member-link > mr {
+    transition: all 0.5s;
+}
+
+.member-link:hover > mr{
+    margin-right: 10px;
+} 
+
+.left {
+    position: absolute;
+}
+
+.pd-grid {
+    padding-top: 7%;
+}
+
+.mt-grid {
+    margin-top: 7.5%;
+}
+
+.contents-grid {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.member:hover > .left > .contents-grid {
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+
+.profile-wrap {
+    width: 0;
+    height: 0;
+}
+
+.profile.first {
+    margin-left: 40px;
+}
+
+.profile {
+    width: 350px;
+    height: 350px;
+    margin-right: 50px;
+    border-radius: 100%;
+    transform: scale(1.0);
+    transition: transform 0.5s;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+}
+
+.profile-image {
+    margin: 10px 25px 0 25px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+
+.profile-name {
+    position: relative;
+    transform: translateY(-50%);
+    top: 93%;
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    color: #000;
+}
+
+.youtube {
+    color: red; 
+    font-size: 24px;
+}
+/* // 2. Member Section */
+
+/* 3. Profiles */
+.pro1 {
+    background: url('/Assets/Img/MainP/GB300.png')
+}
+
+.pro2 {
+    background: url('/Assets/Img/MainP/YoubuG300.png')
+}
+
+.pro3 {
+    background: url('/Assets/Img/MainP/Lomun300.png')
+}
+
+.pro4 {
+    background: url('/Assets/Img/MainP/Remojjing300.png')
+}
+
+.pro5 {
+    background: url('/Assets/Img/MainP/ehover300.png')
+}
+
+.pro6 {
+    background: url('/Assets/Img/MainP/Thrmadla300.png')
+}
+/* // 3. Profiles */
+
+/* 4. Contact Section */
+.contact {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.contactleft {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+    float: left;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.contact:hover > .contactleft {
+    position: relative;
+    width: 35%;
+    border-radius: 0 0 30px 0;
+}
+
+.contact-lefttext {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.snslink {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    top: 50%;
+    text-align: center;
+    color: #748BFF;
+    font-size: 23px;
+    opacity: 0;
+    font-family: 'NanumSquareNeo-Variable';
+    transition: all 0.5s;
+}
+
+.contact:hover > .contactleft > .snslink {
+    opacity: 1;
+}
+
+.email-logo {
+    color: #fff;
+}
+
+.snslink {
+    margin-top: 10px;
+}
+
+.snslink > mr {
+    transition: all 0.5s;
+}
+
+.snslink:hover > mr{
+    margin-right: 5px;
+}
+
+.discord {
+    font-size: 23px;
+}
+
+.snslink:hover {
+    color: #6673b8;
+}
+
+.contactright {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 1%;
+    width: 64%;
+}
+
+.contact:hover .iframe {
+    opacity: 1;
+}
+
+.iframe {
+    opacity: 0;
+    height: 95vh;
+    width: 100%;
+    border: none;
+    transition: 0.5s;
+}
+/* // 4. Contact Section */
+
+/* 5. Footer */
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: 0px;
+    animation: FadeIn 1s;
+}
+
+.footer-copy {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 20px;
+    font-family: 'NanumSquareNeo-Variable';
+    text-align: left;
+}
+/* // 5. Footer */
+
+/*
+    ================= [ End ] =================
+        + Main Style Sheet Ended.
+    ============================================= 
+*/

@@ -1,0 +1,99 @@
+/*
+    ================= [ Start ] =================
+        + Profiles Style Sheet Started.
+    ============================================= 
+*/
+
+.profile-wrap > div[class*="pro"] {
+    background-position: center;
+    background-size: cover;
+}
+
+.pro1 {
+    background: url(/Assets/Img/Profile/pro1.png);
+}
+
+.pro2 {
+    background: url(/Assets/Img/Profile/pro2.png);
+}
+
+.pro3 {
+    background: url(/Assets/Img/Profile/pro3.png);
+}
+
+.pro4 {
+    background: url(/Assets/Img/Profile/pro4.png);
+}
+
+.pro5 {
+    background: url(/Assets/Img/Profile/pro5.png);
+}
+
+.pro6 {
+    background: url(/Assets/Img/Profile/pro6.png);
+}
+
+.pro7 {
+    background: url(/Assets/Img/Profile/pro7.png);
+}
+
+.pro8 {
+    background: url(/Assets/Img/Profile/pro8.png);
+}
+
+.pro9 {
+    background: url(/Assets/Img/Profile/pro9.png);
+}
+
+.pro10 {
+    background: url(/Assets/Img/Profile/pro10.png);
+}
+
+.pro11 {
+    background: url(/Assets/Img/Profile/pro11.png);
+}
+
+.pro12 {
+    background: url(/Assets/Img/Profile/pro12.png);
+}
+
+.pro13 {
+    background: url(/Assets/Img/Profile/pro13.png);
+}
+
+.pro14 {
+    background: url(/Assets/Img/Profile/pro14.png);
+}
+
+.pro15 {
+    background: url(/Assets/Img/Profile/pro15.png);
+}
+
+.pro16 {
+    background: url(/Assets/Img/Profile/pro16.png);
+}
+
+.pro17 {
+    background: url(/Assets/Img/Profile/pro17.png);
+}
+
+.pro18 {
+    background: url(/Assets/Img/Profile/pro18.png);
+}
+
+.pro19 {
+    background: url(/Assets/Img/Profile/pro19.png);
+}
+
+.pro20 {
+    background: #000;
+}
+
+.headerlogo {
+    background: url(/Assets/Img/Logo/header.png);
+}
+/*
+    ================= [ End ] =================
+        + Profiles Style Sheet Ended.
+    ============================================= 
+*/
