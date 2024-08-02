@@ -300,7 +300,8 @@
 }
 
 .video1 {
-    background: url('/');
+    background: url('/static/images/png/video1.png');
+    background-size: cover;
 }
 
 .video2 {

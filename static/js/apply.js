@@ -90,13 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Send Data to Database
 const firebaseConfig = {
-    apiKey: "AIzaSyBoH33yLzEB3rMxCfvCgxqgtn4OeNS8xHk",
-    authDomain: "teamplayworld-contact.firebaseapp.com",
-    databaseURL: "https://teamplayworld-contact-default-rtdb.firebaseio.com",
-    projectId: "teamplayworld-contact",
-    storageBucket: "teamplayworld-contact.appspot.com",
-    messagingSenderId: "1096825528207",
-    appId: "1:1096825528207:web:464db603749d1b210eb5fa"
+    apiKey: "AIzaSyDetDcRjA1R1968Z0YNBhAoYKupF7LThNg",
+    authDomain: "teamplayworld-apply.firebaseapp.com",
+    databaseURL: "https://teamplayworld-apply-default-rtdb.firebaseio.com/",
+    projectId: "teamplayworld-apply",
+    storageBucket: "teamplayworld-apply.appspot.com",
+    messagingSenderId: "184175982363",
+    appId: "1:184175982363:web:31aa4ff3dd8b395ea085be"
 };
   
 firebase.initializeApp(firebaseConfig);
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
             genderSelect.classList.remove('incorrect-value');
         }
 
-        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=]*)?$/i;
+        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=\u3131-\uD79D]*)?$/i;
         if (!operateSns || !urlRegex.test(operateSns)) {
             isValid = false;
             operateSnsInput.classList.add('incorrect-value');
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let isValid = true;
 
-        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=]*)?$/i;
+        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=\u3131-\uD79D]*)?$/i;
 
         if (portfolio && !urlRegex.test(portfolio)) {
             isValid = false;
@@ -569,7 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
             removeIncorrectClass(genderSelector);
         }
     
-        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=]*)?$/i;
+        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=\u3131-\uD79D]*)?$/i;
     
         if (!validateFormOperateSns || !urlRegex.test(validateFormOperateSns)) {
             isValid = false;
@@ -781,7 +781,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validateOperateSns() {
-        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=]*)?$/i;
+        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=\u3131-\uD79D]*)?$/i;
         const value = operateSnsInput.value.trim();
         if (!value || !urlRegex.test(value)) {
             operateSnsInput.classList.add('incorrect-value');
@@ -791,7 +791,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validateOperateSnsAdditional() {
-        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=]*)?$/i;
+        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=\u3131-\uD79D]*)?$/i;
         const value = operateSnsAdditionalInput.value.trim();
         if (value && !urlRegex.test(value)) {
             operateSnsAdditionalInput.classList.add('incorrect-value');
@@ -838,7 +838,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validatePortfolio() {
-        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=]*)?$/i;
+        const urlRegex = /^(https?:\/\/)?([\w-]+(\.[\w-]+)+)(\/[\w-@;,.?%&=\u3131-\uD79D]*)?$/i;
         const value = portfolioInput.value.trim();
         if (value && !urlRegex.test(value)) {
             portfolioInput.classList.add('incorrect-value');
