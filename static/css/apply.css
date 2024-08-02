@@ -1,0 +1,443 @@
+/*
+    ======================================
+    + Apply Style CSS
+    @ Team. PLAYWORLD 2024. 07. 30.
+    ======================================
+*/
+
+/* Snap Scroll CSS */
+html,
+body {
+    scroll-behavior: smooth;
+}
+/* // Snap Scroll CSS */
+
+/* Section 1 : Intro */
+.section-intro {
+    width: 100%;
+    height: 100vh;
+    background: url(/static/images/svg/apply_background.svg) center no-repeat;
+    background-size: cover;
+}
+
+.intro__wrap {
+    justify-content: center;
+    width: 90%;
+    height: 68.5vh;
+}
+
+.intro__text-wrap {
+    align-items: flex-start;
+}
+
+.intro__title {
+    position: relative;
+    margin-left: 6.5%;
+    font-weight: 700;
+    font-size: 3.2rem;
+    z-index: 2;
+}
+
+.intro__description {
+    margin: 20px 0 0 6.5%;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+/* // Section 1 : Intro */
+
+/* Section 2 : Contents - Apply Form */
+.apply-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.apply__form-progress-box {
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 6.5%;
+    width: 100px;
+    height: 500px;
+    background: #fff;
+    border-radius: 40px;
+    opacity: 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 25%);
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.apply__form-progress-box.fixed {
+    position: fixed;
+    opacity: 1;
+}
+
+.apply__form-progress-box__img {
+    width: 50px;
+}
+
+.apply__form-progress-box__img:not(:last-child) {
+    margin-bottom: 25%;
+}
+
+div[class*="apply-form__section"] {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.apply-form__section-wrap {
+    width: 100%;
+    height: calc(100% - 200px);;
+}
+
+.apply-form__section-title-wrap {
+    width: 100%;
+}
+
+.apply-form__section-title {
+    position: relative;
+    margin-bottom: 2.5%;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+
+.apply-form__section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5.5%;
+    left: 0;
+    width: 100%;
+    height: 27%;
+    background-color: var(--default-blue);
+    z-index: -1;
+}
+
+.apply-form__section-field-contents-wrap {
+    text-align: center;
+    width: 100%;
+}
+
+.apply-form__section-field-contents {
+    align-items: flex-start !important;
+}
+
+.apply-form__section-field-contents:not(:last-child) {
+    margin-bottom: 1.8%;
+}
+
+.apply-form__section-field-require {
+    font-size: 1.15rem;
+    color: var(--default-blue);  
+}
+
+.apply-form__section-field-title {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin: 0 0 1.5% 2.5%;
+}
+
+.apply-form__section-field-fortext,
+.apply-form__section-field-fornumber,
+.apply-form__section-field-forselect,
+.apply-form__section-field-forradio-label,
+.apply-form__section-field-fortextarea {
+    width: 340px;
+    height: 48px;
+    background: transparent;
+    outline: none;
+    border: solid 2px #000;
+    border-radius: 24px;
+    text-align: center;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--default-blue);
+    transition: all 0.5s;
+}
+
+input.incorrect-value,
+.apply-form__section-field-fortextarea.incorrect-value,
+.apply-form__section-field-forradio-label.incorrect-value,
+.apply-form__section-field-forselect.incorrect-value {
+    width: 340px;
+    height: 48px;
+    background: transparent;
+    outline: none;
+    border: solid 2px var(--default-youbug-red);
+    border-radius: 24px;
+    text-align: center;
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--default-youbug-red);
+    transition: all 0.5s;
+}
+
+.apply-form__section-field-forradio-label {
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.apply-form__section-field-forradio-label:hover {
+    width: 360px;
+    border-radius: 10px;
+}
+
+.apply-form__section-field-forradio-label.active {
+    color: var(--default-blue);
+    border: solid 2px var(--default-blue);
+    font-weight: 700;
+}
+
+.apply-form__section-field-fornumber::-webkit-inner-spin-button,
+.apply-form__section-field-fornumber::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+apply-form__section-field-fornumber {
+    -moz-appearance: textfield;
+}
+
+.apply-form__section-field-fornumber::-ms-expand {
+    display: none;
+}
+
+.apply-form__section-field-forradio {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.apply-form__section-field-fortextarea {
+    height: 200px !important;
+    resize: none;
+    outline: none;
+}
+
+.apply-form__section-field-fortextarea::-webkit-scrollbar {
+    display: none;
+}
+
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+    font-size: 1rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+textarea:focus::-webkit-input-placeholder,
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+    color: transparent;
+}
+
+input.only-checker {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.self-introduce-input::-webkit-input-placeholder {
+    line-height: 200px !important;
+}
+
+.apply-form__section-field-forcheckbox {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.apply-form__section-checkbox-wrap span {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.apply-form__section-checkbox-visibled {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    transition: all 0.5s;
+}
+
+.apply-form__section-checkbox-visibled::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 6px;
+    width: 3.5px;
+    height: 8.5px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg) scale(0);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.apply-form__section-field-forcheckbox:checked ~ .apply-form__section-checkbox-visibled {
+    border-color: transparent;
+    background: var(--default-geonbbang-blue);
+    transform: scale(1.05);
+}
+
+.apply-form__section-field-forcheckbox:checked ~ .apply-form__section-checkbox-visibled::after {
+    transform: rotate(45deg) scale(1.05);
+    opacity: 1;
+}
+
+.apply-form__section-description-text {
+    color: #000;
+    margin-left: 5px;
+    font-size: 1.08rem;
+}
+
+.apply-form__section-description-text a {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.apply-form__section-description-text a img {
+    width: 0.8rem;
+    color: var(--default-blue);
+}
+
+.apply-form__section-checkbox-visibled.incorrect-value {
+    border: solid 2px var(--default-youbug-red);
+}
+
+.apply-form__section-description-text.incorrect-value {
+    color: var(--default-youbug-red);
+}
+
+.apply-form__section-next-button {
+    width: 340px;
+    height: 48px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.apply-form__section-next-button:hover {
+    color: var(--default-blue);
+    border-bottom: solid 1px var(--default-blue);
+}
+
+.apply-form__section-success__utility-contents-wrap {
+    position: relative;    
+    top: 50px;
+    width: 100%;
+}
+
+.apply-form__section-success__title {
+    position: relative;
+    margin-bottom: 35px;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+
+.apply-form__section-success__title::after {
+    content: '';
+    position: absolute;
+    bottom: 5.5%;
+    left: 0;
+    width: 100%;
+    height: 27%;
+    background-color: #66cc99;
+    z-index: -1;
+}
+
+.apply-form__section-success__edit-button {
+    width: 340px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.apply-form__section-success__edit-button:hover {
+    width: 360px;
+    border-radius: 10px;
+}
+
+.apply-form__section-success__edit-button > img {
+    width: 1.2rem;
+    margin-right: 2%;
+}
+
+.apply-form__section-success__scroll-down-contents-wrap {
+    position: relative;
+    top: 25%;
+    width: 100%;
+}
+
+@keyframes downAndUpAnimation {
+    from {
+        transform: translateY(0);
+    } 
+    
+    to {
+        transform: translateY(5px);
+    }
+}
+
+.apply-form__section-success__scroll-down-icon {
+    width: 3.5%;
+    margin-bottom: 3.5%;
+    animation: downAndUpAnimation 0.8s infinite alternate;
+}
+
+.apply-form__section-success__scroll-down-text {
+    font-size: 1.2rem;
+    animation: downAndUpAnimation 0.8s infinite alternate;
+}
+
+.submit-success-title {
+    margin-bottom: 20px !important;
+}
+
+.submit-success-title::after {
+    content: '';
+    position: absolute;
+    bottom: 5.5%;
+    left: 0;
+    width: 100%;
+    height: 27%;
+    background-color: var(--default-blue-light);
+    z-index: -1;
+}
+
+.apply-form__section-submit-success__thanks {
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+}
+
+.apply-form__section-submit-success-button {
+    width: 340px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 24px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.apply-form__section-submit-success-button:hover {
+    width: 360px;
+    border-radius: 10px;
+}
+
+.apply-form__section-submit-success-button > img {
+    width: 1.2rem;
+    margin-right: 2%;
+}
+/* // Section 2 : Contents - Apply Form */
