@@ -1,0 +1,315 @@
+/*
+    ======================================
+    + Home Style CSS
+    @ Team. PLAYWORLD 2024. 07. 29.
+    ======================================
+*/
+
+/* Section 1 : Intro */
+.section-intro {
+    width: 100%;
+    height: 100vh;
+    background: url(/static/images/svg/home_background.svg) center no-repeat fixed;
+    background-size: 185%;
+}
+
+.intro__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.intro__slogan {
+    position: relative;
+    top: -2.5%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.intro__slogan::after {
+    content: '';
+    position: absolute;
+    bottom: 5.5%;
+    left: 0;
+    width: 100%;
+    height: 27%;
+    background-color: var(--default-blue);
+    z-index: -1;
+}
+
+.intro__description {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.intro__description-bottom {
+    position: relative;
+    top: 80%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.intro__description-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: 5.5%;
+    left: 0;
+    width: 100%;
+    height: 27%;
+    background-color: var(--default-blue-light);
+    z-index: -1;
+}
+/* // Section 1 : Intro */
+
+/* Section 2 : Contents - About */
+.section-contents__about {
+    width: 100%;
+    height: 70vh;
+}
+
+.about__wrap {
+    justify-content: center;
+    align-items: flex-start;
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.about__title {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.about__title::after {
+    content: '';
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: var(--default-blue-light);
+    z-index: -1;
+}
+
+.about__description {
+    margin: 2% 0 4% 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.about__button {
+    width: 25%;
+    height: 50px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.about__button:hover {
+    border: 2px solid var(--default-blue);
+    color: var(--default-blue);
+    border-radius: 15px;
+}
+
+.about__button > span {
+    transition: all 0.5s;
+}
+
+.about__button:hover > span {
+    color: var(--default-blue);
+    margin-left: 20%;
+}
+/* // Section 2 : Contents - About */
+
+/* Section 3 : Contents - Informations */
+.section-contents__info {
+    display: table;
+    width: 100%;
+}
+
+.info__news-wrap {
+    width: 85%;
+}
+
+.info__news-title {
+    position: relative;
+    margin-bottom: 3%;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.info__news-title::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: var(--default-blue-light);
+    z-index: -1;
+}
+
+.info__news-arrange {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info__news-contents-link {
+    width: 30%;
+}
+
+.info__news-contents {
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 250px;
+    background: #fff center no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 25%);
+    transform: scale(1.0);
+    transition: all 0.5s;
+}
+
+.info__news-contents:hover {
+    transform: scale(1.03);
+}
+
+.news-contents__text-wrap {
+    justify-content: center;
+    width: 92.5%;
+    height: 22.5%;
+    background: var(--default-blue);
+    margin-bottom: 5%;
+}
+
+.news-contents__title {
+    width: 95%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-contents__description {
+    width: 95%;
+    margin-left: 5%;
+    color: #f2f2f2;
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info__videos-wrap {
+    width: 85%;
+    margin-top: 10%;
+}
+
+.info__videos-title {
+    position: relative;
+    margin-bottom: 3%;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.info__videos-title::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: var(--default-blue-light);
+    z-index: -1;
+}
+
+.info__videos-arrange {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info__videos-contents-link {
+    width: 30%;
+}
+
+.info__videos-contents {
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 250px;
+    background: #fff center no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 25%);
+    transform: scale(1.0);
+    transition: all 0.5s;
+}
+
+.info__videos-contents:hover {
+    transform: scale(1.03);
+}
+
+.videos-contents__text-wrap {
+    justify-content: center;
+    width: 92.5%;
+    height: 22.5%;
+    background: var(--default-blue);
+    margin-bottom: 5%;
+}
+
+.videos-contents__title {
+    width: 95%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* News & Videos Contents Picture*/
+.news1 {
+    background: url('/');
+}
+
+.news2 {
+    background: url('/');
+}
+
+.news3 {
+    background: url('/');
+}
+
+.video1 {
+    background: url('/static/images/png/video1.png');
+    background-size: cover;
+}
+
+.video2 {
+    background: url('/');
+}
+
+.video3 {
+    background: url('/');
+}
+/* // News & Videos Contents Picture*/
+/* // Section 3 : Contents - Informations */
