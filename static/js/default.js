@@ -26,3 +26,26 @@ if (currentPath === '/index') {
         homeLink.removeAttribute('href');
     });
 }
+
+// Footer가 보일 때 Footer Contents에 애니메이션 작동
+const footerIntersectionCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+        const target = entry.target;
+        if (target.classList.contains('footer')) {
+            target.querySelector('.footer__contents-wrap').classList.add('animation-fade');
+            target.querySelector('.footer__contents-copyright').classList.add('animation-fade');
+        }
+        }
+    });
+};
+
+const footerObserver = new IntersectionObserver(footerIntersectionCallback, {
+    threshold: 0.2,
+});
+
+const footer = document.querySelector('.footer');
+
+if (footer) {
+    footerObserver.observe(footer);
+}

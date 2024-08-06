@@ -136,7 +136,88 @@ body {
 
 /* Member Profile Pictures */
 .member1 {
-    /* background: url('/') no-repeat; */
+    background: url('/static/images/png/profile/geonbbang.png');
+    background-size: cover;
+}
+
+.member2 {
+    background: url('/static/images/png/profile/remojjing.png');
+    background-size: cover;
+}
+
+.member3 {
+    background: url('/static/images/png/profile/lomun.png');
+    background-size: cover;
+}
+
+.member4 {
+    background: url('/static/images/png/profile/youbug.png');
+    background-size: cover;
+}
+
+.member5 {
+    background: url('/static/images/png/profile/ehover.png');
+    background-size: cover;
+}
+
+.member6 {
+    background: url('/static/images/png/profile/thrmadla.png');
+    background-size: cover;
+}
+
+.member7 {
+    background: url('/static/images/png/profile/teoh.png');
+    background-size: cover;
+}
+
+.member8 {
+    background: url('/static/images/png/profile/randy.png');
+    background-size: cover;
+}
+
+.member9 {
+    background: url('/static/images/png/profile/tofu.png');
+    background-size: cover;
+}
+
+.member10 {
+    background: url('/static/images/png/profile/dyshin.png');
+    background-size: cover;
+}
+
+.member11 {
+    background: url('/static/images/png/profile/gamgyul.png');
+    background-size: cover;
+}
+
+.member12 {
+    background: url('/static/images/png/profile/jonghyun.png');
+    background-size: cover;
+}
+
+.member13 {
+    background: url('/static/images/png/profile/iron.png');
+    background-size: cover;
+}
+
+.member14 {
+    background: url('/static/images/png/profile/choi.png');
+    background-size: cover;
+}
+
+.member15 {
+    background: url('/static/images/png/profile/bbiyakseu.png');
+    background-size: cover;
+}
+
+.member16 {
+    background: url('/static/images/png/profile/ogakphone.png');
+    background-size: cover;
+}
+
+.member17 {
+    background: url('/static/images/png/profile/yeongjae.png');
+    background-size: cover;
 }
 /* // Member Profile Pictures */
 
