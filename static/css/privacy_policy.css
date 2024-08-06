@@ -1,0 +1,82 @@
+/*
+    ======================================
+    + Privacy Policy Style CSS
+    @ Team. PLAYWORLD 2024. 08. 02.
+    ======================================
+*/
+
+/* Section 1 : Before Contents */
+.section-before-contents {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+}
+
+.before-contents__title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.before-contents__description {
+    margin-bottom: 10%;
+    color: var(--default-gray);
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+/* // Section 1 : Before Contents */
+
+/* Section 2 : Contents */
+.contents__wrap {
+    display: table;
+    width: 100%;
+}
+
+.contents__description-wrap {
+    width: 62.5%;
+    margin: 0 auto 2.5% auto;
+}
+
+.contents__description {
+    color: var(--default-gray);
+    text-wrap: wrap;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.contents__section {
+    display: table;
+    width: 62.5%;
+    margin: 0 auto;
+    border-top: 2px solid var(--default-gray);
+    border-bottom: 2px solid var(--default-gray);
+}
+
+.contents__section:not(:last-child) {
+    margin-bottom: 8%;
+}
+
+.contents__section-text-wrap {
+    width: 85%;
+    margin: 5% auto;
+}
+
+.contents__section-title {
+    margin-bottom: 2%;
+    text-wrap: wrap;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.contents__section-detail {
+    color: var(--default-gray);
+    text-wrap: wrap;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.contents__section-detail:not(:last-child) {
+    margin-bottom: 2%;
+}
+/* // Section 2 : Contents */
