@@ -13,15 +13,15 @@
     <meta name="description" content="We are TEAM. PLAYWORLD! 함께 만드는 즐거움 있는 세상, TEAM. PLAYWORLD 입니다.">
     <meta name="date" content="2024-01-01T00:00:00+09:00">
     <meta name="robots" content="index, follow"> 
-    <meta http-equiv="title" content="Team. PLAYWORLD">
+    <meta http-equiv="title" content="TEAM. PLAYWORLD">
     <meta http-equiv="subject" content="We are TEAM. PLAYWORLD! 함께 만드는 즐거움 있는 세상, TEAM. PLAYWORLD 입니다.">
-    <meta http-equiv="author" content="Team. PLAYWORLD">
+    <meta http-equiv="author" content="TEAM. PLAYWORLD">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://teamplayworld.kro.kr">
-    <meta property="og:title" content="Team. PLAYWORLD">
+    <meta property="og:title" content="TEAM. PLAYWORLD">
     <meta property="og:image" content="/static/images/meta/opengraph_image.png">
     <meta property="og:description" content="We are TEAM. PLAYWORLD! 함께 만드는 즐거움 있는 세상, TEAM. PLAYWORLD 입니다.">
-    <meta property="og:site_name" content="Team. PLAYWORLD">
+    <meta property="og:site_name" content="TEAM. PLAYWORLD">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -29,7 +29,7 @@
     <meta name="twitter:image" content="/static/images/meta/twitter_card.png">
     <meta name="twitter:image:width" content="800">
     <meta name="twitter:image:height" content="418">
-    <meta name="twitter:title" content="Team. PLAYWORLD">
+    <meta name="twitter:title" content="TEAM. PLAYWORLD">
     <meta name="twitter:url" content="https://teamplayworld.kro.kr">
     <meta name="twitter:description" content="We are TEAM. PLAYWORLD! 함께 만드는 즐거움 있는 세상, TEAM. PLAYWORLD 입니다.">
     <meta http-equiv="content-style-type" content="text/css">
@@ -63,11 +63,11 @@
 <body>
     <div class="wrap">
         <div class="container">
-            <!--Header-->
+            <!--Header (Default)-->
             <div class="header">
-                <ul class="row header__contents">
+                <ul class="row center header__contents">
                     <li>
-                        <object class="header-contents__logo" data="/static/images/svg/header_logo.svg" type="image/svg+xml" aria-label="Team. PLAYWORLD Logo">
+                        <object class="header-contents__logo" data="/static/images/svg/header_logo.svg" type="image/svg+xml" aria-label="TEAM. PLAYWORLD Logo">
                             <!--Header Logo (SVG)-->
                         </object>
                     </li>
@@ -83,7 +83,47 @@
                     <li><a href="/apply" class="header-contents__nav">지원</a></li>
                 </ul>
             </div>
-            <!--// Header-->
+            <!--// Header (Default)-->
+
+            <!--Header (Mobile)-->
+            <div class="mobile-header">
+                <ul class="row mobile-header__contents">
+                    <li class="row center">
+                        <object class="mobile-header-contents__logo" data="/static/images/svg/header_logo.svg" type="image/svg+xml" aria-label="TEAM. PLAYWORLD Logo">
+                            <!--Header Logo (SVG)-->
+                        </object>
+
+                        <p class="mobile-header-contents__logo-text">
+                            TEAM. 
+                            <br> PLAYWORLD
+                        </p>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="mobile-header-contents__nav-button-check" id="mobile-header-contents__nav-button-check">
+                            
+                        <label for="mobile-header-contents__nav-button-check" class="mobile-header-contents__nav-button-label">
+                            <div class="mobile-header-contents__nav-button">
+                                <span class="mobile-header-contents__nav-button-line"></span>
+                                <span class="mobile-header-contents__nav-button-line"></span>
+                                <span class="mobile-header-contents__nav-button-line"></span>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mobile-header-contents__nav-layer">
+                <div class="row mobile-header-contents__nav-contents">
+                    <ul class="col mobile-header-contents__nav-contents__wrap">
+                        <li><a href="/" class="mobile-header-contents__nav-contents__nav-link">홈</a></li>
+                        <li><a href="http://news.teamplayworld.kro.kr" class="row center mobile-header-contents__nav-contents__nav-link" target="_blank" rel="noreferrer noopener">뉴스</a></li>
+                        <li><a href="/members" class="mobile-header-contents__nav-contents__nav-link">멤버</a></li>
+                        <li><a href="/apply" class="mobile-header-contents__nav-contents__nav-link">지원</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--// Header (Mobile)-->
 
             <!--Section 1 : Intro-->
             <div class="col center section-intro">
@@ -128,7 +168,7 @@
                         <!--News  Contents Arrange-->
                         <div class="row info__news-arrange animation-before">
                             <!--News Card (1)-->
-                            <a href="https://teamplayworld.notion.site/d9da7c6ddea240999554b7fe388dd478" class="info__news-contents-link">
+                            <a href="https://teamplayworld.notion.site/d9da7c6ddea240999554b7fe388dd478" class="info__news-contents-link" target="_blank" rel="noreferrer noopener">
                                 <div class="col info__news-contents news1">
                                     <div class="col news-contents__text-wrap">
                                         <div class="news-contents__title">팀플레이월드 웹사이트 변경 안내</div>
@@ -139,22 +179,22 @@
                             <!--// E-->
 
                             <!--News Card (2)-->
-                            <a href="#" class="info__news-contents-link">
+                            <a class="info__news-contents-link" target="_blank" rel="noreferrer noopener">
                                 <div class="col info__news-contents news2">
                                     <div class="col news-contents__text-wrap">
-                                        <div class="news-contents__title">News Title</div>
-                                        <div class="news-contents__description">Description</div>
+                                        <div class="news-contents__title">아직 새로운 소식이 없어요 😓</div>
+                                        <div class="news-contents__description"><!--새로운 소식의 설명 입력--></div>
                                     </div>
                                 </div>
                             </a>
                             <!--// E-->
 
                             <!--News Card (3)-->
-                            <a href="#" class="info__news-contents-link">
+                            <a class="info__news-contents-link" target="_blank" rel="noreferrer noopener">
                                 <div class="col info__news-contents news3">
                                     <div class="col news-contents__text-wrap">
-                                        <div class="news-contents__title">News Title</div>
-                                        <div class="news-contents__description">Description</div>
+                                        <div class="news-contents__title">아직 새로운 소식이 없어요 😓</div>
+                                        <div class="news-contents__description"><!--새로운 소식의 설명 입력--></div>
                                     </div>
                                 </div>
                             </a>
@@ -170,7 +210,7 @@
                         <!--Videos Contents Arrange-->
                         <div class="row info__videos-arrange animation-before">
                             <!--Video Card (1)-->
-                            <a href="https://www.youtube.com/watch?v=QUvlEsXp5cI" class="info__videos-contents-link">
+                            <a href="https://www.youtube.com/watch?v=QUvlEsXp5cI" class="info__videos-contents-link" target="_blank" rel="noreferrer noopener">
                                 <div class="col info__videos-contents video1">
                                     <div class="col videos-contents__text-wrap">
                                         <div class="videos-contents__title">다시 한번 :: /redo</div>
@@ -180,20 +220,20 @@
                             <!--// E-->
 
                             <!--Video Card (2)-->
-                            <a href="#" class="info__videos-contents-link">
+                            <a class="info__videos-contents-link" target="_blank" rel="noreferrer noopener">
                                 <div class="col info__videos-contents video2">
                                     <div class="col videos-contents__text-wrap">
-                                        <div class="videos-contents__title">Video Title</div>
+                                        <div class="videos-contents__title">아직 준비된 영상이 없어요 😅</div>
                                     </div>
                                 </div>
                             </a>
                             <!--// E-->
 
                             <!--Video Card (3)-->
-                            <a href="#" class="info__videos-contents-link">
+                            <a class="info__videos-contents-link" target="_blank" rel="noreferrer noopener">
                                 <div class="col info__videos-contents video3">
                                     <div class="col videos-contents__text-wrap">
-                                        <div class="videos-contents__title">Video Title</div>
+                                        <div class="videos-contents__title">아직 준비된 영상이 없어요 😅</div>
                                     </div>
                                 </div>
                             </a>

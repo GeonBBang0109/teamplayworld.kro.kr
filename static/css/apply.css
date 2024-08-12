@@ -379,6 +379,16 @@ input.only-checker {
     width: 100%;
 }
 
+@-webkit-keyframes downAndUpAnimation {
+    from {
+        transform: translateY(0);
+    } 
+    
+    to {
+        transform: translateY(5px);
+    }
+}
+
 @keyframes downAndUpAnimation {
     from {
         transform: translateY(0);
@@ -392,12 +402,14 @@ input.only-checker {
 .apply-form__section-success__scroll-down-icon {
     width: 3.5%;
     margin-bottom: 3.5%;
-    animation: downAndUpAnimation 0.8s infinite alternate;
+    -webkit-animation: downAndUpAnimation 0.8s infinite alternate;
+            animation: downAndUpAnimation 0.8s infinite alternate;
 }
 
 .apply-form__section-success__scroll-down-text {
     font-size: 1.2rem;
-    animation: downAndUpAnimation 0.8s infinite alternate;
+    -webkit-animation: downAndUpAnimation 0.8s infinite alternate;
+            animation: downAndUpAnimation 0.8s infinite alternate;
 }
 
 .submit-success-title {
