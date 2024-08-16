@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const applicationTypeCheck = document.querySelector('.application-type-check');
         const portfolioInput = document.querySelector('.portfolio-input');
         const selfIntroduceInput = document.querySelector('.self-introduce-input');
-        const privacyAgreeCheckInput = document.querySelector('.privacy-agree-checkbox-visible');
+        const privacyAgreeCheckInput = document.querySelector('.privacy-agree-checkbox-visibled');
         const privacyAgreeChecktext = document.querySelector('.privacy-agree-checkbox-text');
         const privacyAgreeCheck = document.querySelector('.privacy-agree-check');
     
