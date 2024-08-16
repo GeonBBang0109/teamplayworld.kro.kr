@@ -5,6 +5,7 @@
     ======================================
 */
 
+/* PC (Default) */
 /* Section 1 : Intro */
 .section-intro {
     width: 100%;
@@ -301,7 +302,7 @@
 }
 
 .video1 {
-    background: url('/static/images/png/video1.png');
+    background: url('/static/images/png/videos/video1.png');
     background-size: cover;
 }
 
@@ -314,6 +315,7 @@
 }
 /* // News & Videos Contents Picture*/
 /* // Section 3 : Contents - Informations */
+/* // PC (Default) */
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
