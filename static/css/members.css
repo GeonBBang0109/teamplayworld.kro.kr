@@ -246,7 +246,11 @@ body {
     /* Body Background */
     body {
         background: url('/static/images/svg/members_mobile_background.svg') center no-repeat fixed;
+<<<<<<< HEAD
         background-size: cover;
+=======
+        background-size: 180%;
+>>>>>>> 31e654b9699b17156a805c679515ed850ad95e49
     }
     /* // Body Background */
 
