@@ -5,6 +5,7 @@
     ======================================
 */
 
+/* PC (Default) */
 /* Body Background */
 body {
     background: url(/static/images/svg/members_background.svg) center no-repeat fixed;
@@ -70,6 +71,7 @@ body {
     flex-wrap: wrap;
     width: 80%;
     height: 100%;
+    margin: 0 auto;
 }
 
 .members__contents {
@@ -136,87 +138,87 @@ body {
 
 /* Member Profile Pictures */
 .member1 {
-    background: url('/static/images/png/profile/geonbbang.png');
+    background: url('/static/images/png/profiles/geonbbang.png');
     background-size: cover;
 }
 
 .member2 {
-    background: url('/static/images/png/profile/remojjing.png');
+    background: url('/static/images/png/profiles/remojjing.png');
     background-size: cover;
 }
 
 .member3 {
-    background: url('/static/images/png/profile/lomun.png');
+    background: url('/static/images/png/profiles/lomun.png');
     background-size: cover;
 }
 
 .member4 {
-    background: url('/static/images/png/profile/youbug.png');
+    background: url('/static/images/png/profiles/youbug.png');
     background-size: cover;
 }
 
 .member5 {
-    background: url('/static/images/png/profile/ehover.png');
+    background: url('/static/images/png/profiles/ehover.png');
     background-size: cover;
 }
 
 .member6 {
-    background: url('/static/images/png/profile/thrmadla.png');
+    background: url('/static/images/png/profiles/thrmadla.png');
     background-size: cover;
 }
 
 .member7 {
-    background: url('/static/images/png/profile/teoh.png');
+    background: url('/static/images/png/profiles/teoh.png');
     background-size: cover;
 }
 
 .member8 {
-    background: url('/static/images/png/profile/randy.png');
+    background: url('/static/images/png/profiles/randy.png');
     background-size: cover;
 }
 
 .member9 {
-    background: url('/static/images/png/profile/tofu.png');
+    background: url('/static/images/png/profiles/tofu.png');
     background-size: cover;
 }
 
 .member10 {
-    background: url('/static/images/png/profile/dyshin.png');
+    background: url('/static/images/png/profiles/dyshin.png');
     background-size: cover;
 }
 
 .member11 {
-    background: url('/static/images/png/profile/gamgyul.png');
+    background: url('/static/images/png/profiles/gamgyul.png');
     background-size: cover;
 }
 
 .member12 {
-    background: url('/static/images/png/profile/jonghyun.png');
+    background: url('/static/images/png/profiles/jonghyun.png');
     background-size: cover;
 }
 
 .member13 {
-    background: url('/static/images/png/profile/iron.png');
+    background: url('/static/images/png/profiles/iron.png');
     background-size: cover;
 }
 
 .member14 {
-    background: url('/static/images/png/profile/choi.png');
+    background: url('/static/images/png/profiles/choi.png');
     background-size: cover;
 }
 
 .member15 {
-    background: url('/static/images/png/profile/bbiyakseu.png');
+    background: url('/static/images/png/profiles/bbiyakseu.png');
     background-size: cover;
 }
 
 .member16 {
-    background: url('/static/images/png/profile/ogakphone.png');
+    background: url('/static/images/png/profiles/ogakphone.png');
     background-size: cover;
 }
 
 .member17 {
-    background: url('/static/images/png/profile/yeongjae.png');
+    background: url('/static/images/png/profiles/yeongjae.png');
     background-size: cover;
 }
 /* // Member Profile Pictures */
@@ -237,3 +239,39 @@ body {
     font-weight: 700;
 }
 /* // Section 2 : Contents - Members */
+/* // PC (Default) */
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Body Background */
+    body {
+        background: url('/static/images/svg/members_mobile_background.svg') center no-repeat fixed;
+        background-size: cover;
+    }
+    /* // Body Background */
+
+    /* Section 1 : Intro */
+    .intro__wrap {
+        width: 80%;
+    }
+
+    .intro__title {
+        font-weight: 900;
+        font-size: 1.95rem;
+    }
+
+    .intro__description {
+        margin-top: 5%;
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+    /* // Section 1 : Intro */
+
+    /* Section 2 : Contents - Members */
+    .members__contents {
+        flex: unset;
+        margin-bottom: 20%;
+    }
+    /* // Section 2 : Contents - Members */
+}
+/* // Mobile */

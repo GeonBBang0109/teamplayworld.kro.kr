@@ -5,6 +5,7 @@
     ======================================
 */
 
+/* PC (Default) */
 /* Section 1 : Before Contents */
 .section-before-contents {
     justify-content: flex-end;
@@ -80,3 +81,58 @@
     margin-bottom: 2%;
 }
 /* // Section 2 : Contents */
+/* // PC (Default) */
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    /* Section 1 : Before Contents */
+    .before-contents__text-wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .before-contents__title {
+        font-size: 1.6rem;
+        word-break: keep-all;
+    }
+
+    .before-contents__description {
+        margin-top: 2.5%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    /* // Section 1 : Before Contents */
+
+    /* Section 2 : Contents */
+    .contents__description-wrap,
+    .contents__section {
+        width: 80%;
+    }
+
+    .contents__description {
+        width: 95%;
+        margin: 0 auto 8% auto;
+        word-wrap: break-word;
+        font-size: 0.95rem;
+    }
+
+    .contents__section-text-wrap {
+        width: 95%;
+        margin: 5% auto;
+        text-wrap: wrap;
+    }
+
+    .contents__section-text-wrap a {
+        word-break: break-all;
+    }
+
+    .contents__section-title {
+        font-size: 5.5vw;
+    }
+
+    .contents__section-detail {
+        font-size: 0.9rem;
+    }
+    /* // Section 2 : Contents */
+}
+/* // Mobile */
