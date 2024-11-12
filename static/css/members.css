@@ -226,6 +226,11 @@ body {
     background: url('/static/images/png/profiles/nuelsoh.png');
     background-size: cover;
 }
+
+.member19 {
+    background: url('/static/images/png/profiles/hyeon.png');
+    background-size: cover;
+}
 /* // Member Profile Pictures */
 
 .pagination {
