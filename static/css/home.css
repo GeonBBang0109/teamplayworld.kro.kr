@@ -295,7 +295,8 @@
 }
 
 .news2 {
-    background: url('/');
+    background: url('/static/images/png/news/TEAMPLAYWORLD_2024_NEWS_BASE.png');
+    background-size: cover;
 }
 
 .news3 {
