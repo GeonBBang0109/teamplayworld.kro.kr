@@ -74,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const memberRadio = document.querySelector('.apply-form__section-field-forradio[value="member"]');
     const applicationTypeCheck = document.querySelector('.application-type-check');
 
+    // 지원 유형 선택 확인
     function updateApplicationType() {
         if (creatorRadio.checked) {
             applicationTypeCheck.value = '크리에이터';
@@ -89,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Send Data to Database
+// Firebase 설정
 const firebaseConfig = {
     apiKey: "AIzaSyDetDcRjA1R1968Z0YNBhAoYKupF7LThNg",
     authDomain: "teamplayworld-apply.firebaseapp.com",
@@ -101,36 +103,25 @@ const firebaseConfig = {
   
 firebase.initializeApp(firebaseConfig);
 
+// Database 정의
 const applyFormDatabase = firebase.database().ref('TEAM-PLAYWORLD-ApplyForm-DB');
 
-function formSubmit(event) {
-    event.preventDefault()
-    const applyForm = document.querySelector('.apply__form');
-    const name = document.querySelector('.name-input').value;
-    const birth = document.querySelector('.birth-input').value;
-    const gender = document.querySelector('.gender-selector').value;
-    const operateSns = document.querySelector('.operate-sns-input').value;
-    const operateSnsAdditional = document.querySelector('.operate-sns-additional-input').value;
-    const email = document.querySelector('.email-input').value;
-    const discordUsername = document.querySelector('.discordusername-input').value;
-    const phone = document.querySelector('.phone-input').value;
-    const applicationType = document.querySelector('.application-type-check').value;
-    const portfolio = document.querySelector('.portfolio-input').value;
-    const selfIntroduce = document.querySelector('.self-introduce-input').value;
-    const privacy = document.querySelector('.privacy-agree-check').value;
-    const timestamp = new Date().toString();
+// Form이 제출 상태에 있지 않음 (기본)
+let formSubmitted = false;
 
-    sendData(name, birth, gender, discordUsername, email, phone, operateSns, operateSnsAdditional, applicationType, portfolio, selfIntroduce, privacy, timestamp);
-    
-    setTimeout(() => {
-        applyForm.reset();
-    }, 2000);
-}
+// Form을 제출하지 않고, 이용자가 페이지를 나가려 할 때 경고
+window.addEventListener('beforeunload', (event) => {
+    if (!formSubmitted) {
+        event.preventDefault();
+        event.returnValue = '';
+    }
+});
 
 // Send Data
 const sendData = (name, birth, gender, discordUsername, email, phone, operateSns, operateSnsAdditional, applicationType, portfolio, selfIntroduce, privacy, timestamp) => {
-    var newForm = applyFormDatabase.push();
+    var newForm = applyFormDatabase.push(); // (...)의 값을 받아서 Firebase로 보내기
 
+    // 새로운 데이터 저장 (데이터 저장 Form 형식)
     newForm.set({
         "0) 이름": name,
         "1) 생년월일": birth,
@@ -147,6 +138,39 @@ const sendData = (name, birth, gender, discordUsername, email, phone, operateSns
         "12) 제출 시간": timestamp,
     });
 };
+
+// Form 제출 함수
+function formSubmit(event) {
+    // 기본적으로 제출을 방지
+    event.preventDefault();
+    
+    // Form 제출 상태로 변경
+    formSubmitted = true;
+
+    // 이용자의 Form 작성 값 받기
+    const applyForm = document.querySelector('.apply__form');
+    const name = document.querySelector('.name-input').value;
+    const birth = document.querySelector('.birth-input').value;
+    const gender = document.querySelector('.gender-selector').value;
+    const operateSns = document.querySelector('.operate-sns-input').value;
+    const operateSnsAdditional = document.querySelector('.operate-sns-additional-input').value;
+    const email = document.querySelector('.email-input').value;
+    const discordUsername = document.querySelector('.discordusername-input').value;
+    const phone = document.querySelector('.phone-input').value;
+    const applicationType = document.querySelector('.application-type-check').value;
+    const portfolio = document.querySelector('.portfolio-input').value;
+    const selfIntroduce = document.querySelector('.self-introduce-input').value;
+    const privacy = document.querySelector('.privacy-agree-check').value;
+    const timestamp = new Date().toString();
+
+    // 데이터를 Firebase로 보내기
+    sendData(name, birth, gender, discordUsername, email, phone, operateSns, operateSnsAdditional, applicationType, portfolio, selfIntroduce, privacy, timestamp);
+    
+    // 제출 후 Form 초기화
+    setTimeout(() => {
+        applyForm.reset();
+    }, 2000);
+}
 
 // Section Sucess Script
 document.addEventListener('DOMContentLoaded', () => {
@@ -369,6 +393,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /*
+    - 이 기능은 사용하지 않습니다.
+    - 만약, 사용할 일이 있을 경우 사용하기 위해 주석 처리하였습니다.
+
     function validateIntroduceInputs() {
         const portfolioInput = document.querySelector('.portfolio-input');
         const selfIntroduceInput = document.querySelector('.self-introduce-input');

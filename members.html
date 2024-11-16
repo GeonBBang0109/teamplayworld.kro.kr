@@ -140,10 +140,41 @@
             <!--Section 2 : Contents - Members-->
             <div class="section-contents__members">
                 <div class="col center members__wrap animation-before">
+
+                    <!--Filter-->
+                    <div class="row members__filter-wrap">
+                        <div class="members__filter-dropdown">
+                            <button class="members__filter-dropdown-btn">Filter</button>
+
+                            <div class="members__filter-dropdown-contents-wrap">
+                                <a href="javascript:resetFiltering();" class="row members__filter-dropdown-contents filtering_reset">
+                                    <p>전체 보기</p>
+                                </a>
+
+                                <a href="javascript:filteringMemberTypes('creator');" class="row members__filter-dropdown-contents filtering_creator">
+                                    <p>크리에이터만 보기</p>
+                                </a>
+
+                                <a href="javascript:filteringMemberTypes('member');" class="row members__filter-dropdown-contents filtering_member">
+                                    <p>일반 멤버만 보기</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="row center members__filter-check">
+                            <!--Auto Generate-->
+                        </p>
+
+                        <p class="row center members__filter-count-items">
+                            <!--Auto Generate-->
+                        </p>
+                    </div>
+                    <!--// Filter-->
+                    
                     <!--Member Card Arrange-->
                     <div class="row members__arrange">
                         <!--Member Card (1)-->
-                        <div class="members__contents">
+                        <div class="members__contents" filter-tag-type="creator">
                             <div class="members__contents-profile member1">
                                 <!--Member Profile Picture-->
                             </div>
@@ -158,14 +189,14 @@
                         <!--// E-->
 
                         <!--Member Card (2)-->
-                        <div class="members__contents">
+                        <div class="members__contents" filter-tag-type="creator">
                             <div class="members__contents-profile member2">
                                 <!--Member Profile Picture-->
                             </div>
                             
                             <div class="row members__contents-info-wrap">
                                 <p class="members__contents-name">레모찡</p>
-                                <a href="https://www.youtube.com/@레모찡_0120" target="_blank" rel="noreferrer noopener" class="members__contents-link">
+                                <a href="https://www.youtube.com/@레모찡_ALT" target="_blank" rel="noreferrer noopener" class="members__contents-link">
                                     <img src="/static/images/svg/channel_link_icon.svg" alt="Linked Icon" class="members__contents-link-icon">
                                 </a>
                             </div>
@@ -173,7 +204,7 @@
                         <!--// E-->
 
                         <!--Member Card (3)-->
-                        <div class="members__contents">
+                        <div class="members__contents" filter-tag-type="creator">
                             <div class="members__contents-profile member3">
                                 <!--Member Profile Picture-->
                             </div>
@@ -188,7 +219,7 @@
                         <!--// E-->
 
                         <!--Member Card (4)-->
-                        <div class="members__contents">
+                        <div class="members__contents" filter-tag-type="creator">
                             <div class="members__contents-profile member4">
                                 <!--Member Profile Picture-->
                             </div>
@@ -203,7 +234,7 @@
                         <!--// E-->
 
                         <!--Member Card (5)-->
-                        <div class="members__contents">
+                        <div class="members__contents" filter-tag-type="creator">
                             <div class="members__contents-profile member5">
                                 <!--Member Profile Picture-->
                             </div>
@@ -218,14 +249,14 @@
                         <!--// E-->
 
                         <!--Member Card (6)-->
-                        <div class="members__contents">
+                        <div class="members__contents" filter-tag-type="creator">
                             <div class="members__contents-profile member6">
                                 <!--Member Profile Picture-->
                             </div>
                             
                             <div class="row members__contents-info-wrap">
                                 <p class="members__contents-name">소금</p>
-                                <a href="https://www.youtube.com/@thrmadla" target="_blank" rel="noreferrer noopener" class="members__contents-link">
+                                <a href="https://www.youtube.com/@소금임" target="_blank" rel="noreferrer noopener" class="members__contents-link">
                                     <img src="/static/images/svg/channel_link_icon.svg" alt="Linked Icon" class="members__contents-link-icon">
                                 </a>
                             </div>
@@ -233,8 +264,8 @@
                         <!--// E-->
 
                         <!--Member Card (7)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member7 noprofile">
+                        <div class="members__contents" filter-tag-type="creator">
+                            <div class="members__contents-profile member7 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -248,8 +279,8 @@
                         <!--// E-->
 
                         <!--Member Card (8)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member8 noprofile">
+                        <div class="members__contents" filter-tag-type="creator">
+                            <div class="members__contents-profile member8 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -263,8 +294,8 @@
                         <!--// E-->
 
                         <!--Member Card (9)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member9 noprofile">
+                        <div class="members__contents" filter-tag-type="creator">
+                            <div class="members__contents-profile member9 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -278,8 +309,8 @@
                         <!--// E-->
 
                         <!--Member Card (10)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member10 noprofile">
+                        <div class="members__contents" filter-tag-type="creator">
+                            <div class="members__contents-profile member10 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -293,8 +324,8 @@
                         <!--// E-->
 
                         <!--Member Card (11)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member11 noprofile">
+                        <div class="members__contents" filter-tag-type="creator">
+                            <div class="members__contents-profile member11 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -308,8 +339,8 @@
                         <!--// E-->
 
                         <!--Member Card (12)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member12 noprofile">
+                        <div class="members__contents" filter-tag-type="member">
+                            <div class="members__contents-profile member12 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -323,8 +354,8 @@
                         <!--// E-->
 
                         <!--Member Card (13)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member13 noprofile">
+                        <div class="members__contents" filter-tag-type="member">
+                            <div class="members__contents-profile member13 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -338,8 +369,8 @@
                         <!--// E-->
 
                         <!--Member Card (14)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member14 noprofile">
+                        <div class="members__contents" filter-tag-type="member">
+                            <div class="members__contents-profile member14 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -353,8 +384,8 @@
                         <!--// E-->
 
                         <!--Member Card (15)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member15 noprofile">
+                        <div class="members__contents" filter-tag-type="member">
+                            <div class="members__contents-profile member15 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -368,8 +399,8 @@
                         <!--// E-->
 
                         <!--Member Card (16)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member16 noprofile">
+                        <div class="members__contents" filter-tag-type="member">
+                            <div class="members__contents-profile member16 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -383,8 +414,8 @@
                         <!--// E-->
 
                         <!--Member Card (17)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member17 noprofile">
+                        <div class="members__contents" filter-tag-type="member">
+                            <div class="members__contents-profile member17 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             
@@ -398,7 +429,7 @@
                         <!--// E-->
 
                         <!--Member Card (18)-->
-                        <div class="members__contents">
+                        <div class="members__contents" filter-tag-type="creator">
                             <div class="members__contents-profile member18">
                                 <!--Member Profile Picture-->
                             </div>
@@ -413,8 +444,8 @@
                         <!--// E-->
 
                         <!--Member Card (19)-->
-                        <div class="members__contents">
-                            <div class="members__contents-profile member19 noprofile">
+                        <div class="members__contents" filter-tag-type="creator">
+                            <div class="members__contents-profile member19 no-profile-img">
                                 <!--Member Profile Picture-->
                             </div>
                             

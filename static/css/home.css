@@ -128,7 +128,7 @@
 
 .about__button:hover > span {
     color: var(--default-blue);
-    margin-left: 20%;
+    margin-left: 1.5%;
 }
 /* // Section 2 : Contents - About */
 
@@ -379,7 +379,7 @@
     }
 
     .about__button:hover > span {
-        margin-left: 5%;
+        margin-left: 2.5%;
     }
     /* // Section 2 : Contents - About */
 
