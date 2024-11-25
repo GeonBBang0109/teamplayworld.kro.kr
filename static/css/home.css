@@ -300,7 +300,8 @@
 }
 
 .news3 {
-    background: url('/');
+    background: url('/static/images/png/news/TEAMPLAYWORLD_2024_NEWS_BASE.png');
+    background-size: cover;
 }
 
 .video1 {
@@ -309,11 +310,13 @@
 }
 
 .video2 {
-    background: url('/');
+    background: url('/static/images/png/videos/video2.png');
+    background-size: cover;
 }
 
 .video3 {
     background: url('/');
+    background-size: cover;
 }
 /* // News & Videos Contents Picture*/
 /* // Section 3 : Contents - Informations */
