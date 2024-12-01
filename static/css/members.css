@@ -307,6 +307,11 @@ body {
     background-size: cover;
 }
 
+.member20 {
+    background: url('/static/images/png/profiles/kading.png');
+    background-size: cover;
+}
+
 .no-profile-img {
     background: url('/static/images/png/profiles/NOPROFILE.png');
     background-size: cover;
