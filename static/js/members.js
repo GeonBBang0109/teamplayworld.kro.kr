@@ -178,16 +178,8 @@ const channelIds = [
     'UCyhMg6N2u-HzPaPhH9GGzjw',
     'UC1SAfNp5aNyCpBl0yZHbWwA',
     'UCRqb6uIibOeo98uokl-HFuw',
-    'NONE',
-    'UCr9EmayTYMFkFl6C3fEiihg',
-    'NONE',
-    'NONE',
-    'NONE',
-    'NONE',
-    'NONE',
-    'NONE',
-    'NONE',
-    'NONE'
+    '',
+    'UCr9EmayTYMFkFl6C3fEiihg'
 ];
 
 const subscriberCountElements = [
