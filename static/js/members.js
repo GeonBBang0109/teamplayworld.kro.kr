@@ -96,7 +96,7 @@ function resetFiltering() {
 updatePagination();
 showPage(currentPage);
 
-// Filtering Button
+// Filtering
 const filteringElements = {
     filteringBtn: document.querySelector('.members__filter-dropdown-btn'),
     filteringDropdownContentsWrap: document.querySelector('.members__filter-dropdown-contents-wrap'),
@@ -109,7 +109,6 @@ const filteringElements = {
     filterCount: document.querySelector('.members__filter-count-items')
 };
 
-// Initially hide the dropdown and select reset button
 filteringElements.filteringDropdownContentsWrap.classList.add('dropdown-inactive');
 filteringElements.filteringButtons.reset.style.background = '#ddd';
 filteringElements.filterCheck.textContent = '';
@@ -168,3 +167,87 @@ function handleFilterClick(type) {
         }
     }
 }
+
+// Count Subscribers
+import { APIKeys } from "./environments.js";
+
+const APIKey = APIKeys.youtubeAPI;
+
+const channelIds = [
+    'UCEUcX3Y0BRZe-gKRDww1w9Q',
+    'UCyhMg6N2u-HzPaPhH9GGzjw',
+    'UC1SAfNp5aNyCpBl0yZHbWwA',
+    'UCRqb6uIibOeo98uokl-HFuw',
+    'NONE',
+    'UCr9EmayTYMFkFl6C3fEiihg',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE',
+    'NONE'
+];
+
+const subscriberCountElements = [
+    '.members__contents-count-subscribers.member1',
+    '.members__contents-count-subscribers.member2',
+    '.members__contents-count-subscribers.member3',
+    '.members__contents-count-subscribers.member4',
+    '.members__contents-count-subscribers.member5',
+    '.members__contents-count-subscribers.member6',
+    '.members__contents-count-subscribers.member7',
+    '.members__contents-count-subscribers.member8',
+    '.members__contents-count-subscribers.member9',
+    '.members__contents-count-subscribers.member10',
+    '.members__contents-count-subscribers.member11',
+    '.members__contents-count-subscribers.member18',
+    '.members__contents-count-subscribers.member19',
+    '.members__contents-count-subscribers.member20'
+];
+
+function fetchChannelStatistics() {
+    channelIds.forEach((channelId, index) => {
+        var url = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id=' + channelId + '&key=' + APIKey;
+
+        $.ajax({
+            url: url,
+            method: 'GET',
+            success: function(response) {
+                var stats = response.items[0].statistics;
+                console.log('Channel Statistics:', stats);
+
+                var subscriberElement = document.querySelector(subscriberCountElements[index]);
+                if (subscriberElement) {
+                    subscriberElement.innerHTML = `구독자: ${stats.subscriberCount}명`;
+                }
+            },
+            error: function(err) {
+                console.error('Error fetching channel statistics:', err);
+            }
+        });
+    });
+}
+
+fetchChannelStatistics();
+
+const memberContents = document.querySelectorAll('.members__contents[filter-tag-type="creator"]');
+
+memberContents.forEach(element => {
+    const memberName = element.querySelector('.members__contents-name');
+    const memberSubscribers = element.querySelector('.members__contents-count-subscribers');
+
+    element.addEventListener('mouseenter', () => {
+        memberSubscribers.style.opacity = '1';
+        memberSubscribers.style.height = '1.2rem';
+    });
+
+    element.addEventListener('mouseleave', () => {
+        memberSubscribers.style.opacity = '0';
+        memberSubscribers.style.height = '0';
+    });
+});
+
+
+
