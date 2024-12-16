@@ -181,11 +181,13 @@ const channelIds = [
     'UC_81QQ5ydSWQOZkjn1iZkZw',
     'UCr9EmayTYMFkFl6C3fEiihg',
     '',
-    '',
+    'UCLir5zBhPqIHeeU6kB_GAGA',
     '',
     '',
     'UC0wU7CbGqnMVrRfL6BaA9RA',
-    'UCYWwD2Og9k3AsN6S4rVwBfQ'
+    'UCYWwD2Og9k3AsN6S4rVwBfQ',
+    '',
+    'UCWbhZ1hOO7zRycM82pw4CYg'
 ];
 
 const subscriberCountElements = [
